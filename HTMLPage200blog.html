@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nathan Abecassis</title>
+    <link rel="stylesheet" href="StyleSheet200blog.css">
+</head>
+<body>
+
+    <header>
+        <h1>Nathan Abecassis</h1>
+        <p>Colorado State University - Mechanical Engineering Student</p>
+    </header>
+
+    <div class="header-overlay"></div>
+
+    <div class="header-content fade-on-scroll">
+        <nav class="navbar">
+            <ul>
+                <li><a href="#" onclick="scrollToSection('featured-posts')">Mech 200 Projects</a></li>
+                <li><a href="HTMLPersonal Life.html">Personal Life</a></li>
+            </ul>
+        </nav>
+
+        <img src="C:\Users\natra\source\repos\MECH200BLOG\MECH200BLOG\PXL_20231203_231340750.jpg" alt="Beautiful Fort Collins">
+
+        <section id="featured-posts" class="fade-on-scroll">
+            <article>
+                <h2>Clock Project</h2>
+                <p>Dive into the most intense project in Mech 200.</p>
+                <a href="HTMLclock1.html">Read more</a>
+            </article>
+            <img src="C:\Users\natra\source\repos\MECH200BLOG\MECH200BLOG\PXL_clock1.1.jpg" alt="Clock Project" style="width: 100%;">
+            <article>
+                <h2>Coaster Project</h2>
+                <p>HAAS CNC certification.</p>
+                <a href="HTMLCoaster.html">Read more</a>
+            </article>
+            <img src="C:\Users\natra\source\repos\MECH200BLOG\MECH200BLOG\PXL_coaster2.jpg" alt="coaster project">
+            <article>
+                <h2>Screwdriver Project</h2>
+                <p>End of year project.</p>
+                <a href="HTMLscrewdriver.html">Read more</a>
+            </article>
+            <img src="C:\Users\natra\source\repos\MECH200BLOG\MECH200BLOG\PXL_20231211_194352302.jpg" alt="screwdriver project">
+        </section>
+
+        <footer class="fade-on-scroll">
+            <p>
+                Social Media -
+                <a href="https://www.linkedin.com/in/nathan-abecassis-8146482a3/" target="_blank">LinkedIn</a>
+            </p>
+        </footer>
+    </div>
+
+    <script src="JavaScript200blog.js"></script>
+
+    <script>
+        function scrollToSection(sectionId) {
+            var section = document.getElementById(sectionId);
+            if (section) {
+                window.scrollTo({
+                    top: section.offsetTop,
+                    behavior: 'smooth'
+                });
+            }
+        }
+    </script>
+</body>
+</html>
